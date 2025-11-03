@@ -13,5 +13,9 @@ import { Heroe } from '../../interfaces/heroes.interface';
 export class HeroeTarjetaComponent{
 
   @Input() heroe!: Heroe;
+  
+  onImgError(e: any) {
+    e.target.src = 'assets/no-image.png';
+  }
 
 }

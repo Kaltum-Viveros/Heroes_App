@@ -20,6 +20,10 @@ import { ConfirmarComponent } from '../../components/confirmar/confirmar.compone
 })
 export class AgregarComponent implements OnInit {
 
+  onImgError(e: any) {
+    e.target.src = 'assets/no-image.png';
+  }
+
   publishers = [
     {
       id: 'DC Comics',
